@@ -1,4 +1,5 @@
 .example {
+  padding: 20px;
   background-color: $main-bg-color;
 }
 
@@ -9,8 +10,7 @@
 }
 
 .example__text {
-  color: #444444;
-  font-family: "Arial", sans-serif;
+  @include accessory-text;
 }
 
 .example__fact-value {
@@ -19,10 +19,10 @@
 }
 
 .example__fact-title {
-  color: #444444;
-  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
+
+  @include accessory-text;
 }
 
 .example__cost {

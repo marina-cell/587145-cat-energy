@@ -1,4 +1,5 @@
 .program-item {
+  padding: 20px;
   color: $main-text-color;
   background-color: $main-bg-color;
 }
@@ -11,8 +12,7 @@
 }
 
 .program-item__desc {
-  color: #444444;
-  font-family: "Arial", sans-serif;
+  @include accessory-text;
 }
 
 .program-item__link {

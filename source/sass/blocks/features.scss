@@ -1,3 +1,7 @@
+.features {
+  padding: 20px;
+}
+
 .features__title {
   font-size: 36px;
   line-height: 60px;
@@ -5,6 +9,5 @@
 }
 
 .features__item {
-  color: #444444;
-  font-family: "Arial", sans-serif;
+  @include accessory-text;
 }

@@ -6,8 +6,8 @@
 }
 
 .product-card__info {
-  color: #444444;
-  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
+
+  @include accessory-text;
 }

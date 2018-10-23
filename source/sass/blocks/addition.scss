@@ -13,10 +13,10 @@
 
 .addition__value,
 .addition__price {
-  color: #444444;
-  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
+
+  @include accessory-text;
 }
 
 .addition__button {
