@@ -1,0 +1,20 @@
+.header {
+  padding-top: 25px;
+  color: #ffffff;
+  background-color: $theme-bg-color;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.header__title {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.header__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}

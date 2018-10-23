@@ -1,0 +1,13 @@
+.features {
+  padding: 20px;
+}
+
+.features__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.features__item {
+  @include accessory-text;
+}

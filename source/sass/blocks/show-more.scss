@@ -1,0 +1,20 @@
+.show-more__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.show-more__text {
+  font-size: 12px;
+  line-height: 16px;
+
+  @include accessory-text;
+}
+
+.show-more__button {
+  color: #444444;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #f2f2f2;
+}

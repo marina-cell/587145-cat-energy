@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
     <div class="page__container">
@@ -22,59 +24,65 @@
         </nav>
       </header>
       <main class="page-main">
-        <h1 class="page-main__title">Каталог продукции</h1>
-        <section class="catalog">
-          <h2 class="visually-hidden">Каталог</h2>
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <article class="catalog__product product-card">
-                <a class="product-card__image" href="#">
-                  <img src="img/photo1.jpg" alt="Cat Energy Pro 500 г">
-                </a>
-                <h3 class="product-card__title">
-                  <a href="#">Cat Energy Pro 500 г</a>
-                </h3>
-                <table class="product-card__info product-table">
-                  <tr>
-                    <td>Объем</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Курица</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>700 Р.</td>
-                  </tr>
-                </table>
-                <a class="product-card__button order-button button" href="#">Заказать</a>
-              </article>
-            </li>
-          </ul>
-        </section>
-        <section class="show-more">
-          <h2 class="show-more__title">Показать еще 100500 товаров</h2>
-          <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
-          <a class="show-more__button button" href="#">Показать все</a>
-        </section>
-        <section class="addition">
-          <ul class="addition__list">
-            <li class="addition__item">
-              <h3 class="addition__title">Сахарозаменитель</h3>
-              <span class="addition__value">1 упаковка (100 г)</span>
-              <span class="addition__price">100 Р.</span>
-              <a class="addition__button order-button button" href="#">Заказать</a>
-            </li>
-          </ul>
-        </section>
-        <section class="gift">
-          <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
-        </section>
+        <div class="page-main__container">
+          <h1 class="page-main__title">Каталог продукции</h1>
+          <section class="catalog">
+            <h2 class="visually-hidden">Каталог</h2>
+            <ul class="catalog__list">
+              <li class="catalog__item">
+                <article class="catalog__product product-card">
+                  <a class="product-card__image" href="#">
+                    <img src="img/photo1.jpg" alt="Cat Energy Pro 500 г">
+                  </a>
+                  <h3 class="product-card__title">
+                    <a href="#">Cat Energy Pro 500 г</a>
+                  </h3>
+                  <table class="product-card__info">
+                    <tr>
+                      <td>Объем</td>
+                      <td>500 г</td>
+                    </tr>
+                    <tr>
+                      <td>Вкус</td>
+                      <td>Курица</td>
+                    </tr>
+                    <tr>
+                      <td>Цена</td>
+                      <td>700 Р.</td>
+                    </tr>
+                  </table>
+                  <a class="product-card__button order-button button" href="#">Заказать</a>
+                </article>
+              </li>
+            </ul>
+          </section>
+          <section class="show-more">
+            <h2 class="show-more__title">Показать еще 100500 товаров</h2>
+            <p class="show-more__text">На самом деле вкусов гораздо больше!</p>
+            <a class="show-more__button button" href="#">Показать все</a>
+          </section>
+          <section class="addition">
+            <h2 class="addition__title">Дополнительные товары</h2>
+            <ul class="addition__list">
+              <li class="addition__item">
+                <h3 class="addition__subtitle">Сахарозаменитель</h3>
+                <span class="addition__value">1 упаковка (100 г)</span>
+                <span class="addition__price">100 Р.</span>
+                <a class="addition__button order-button button" href="#">Заказать</a>
+              </li>
+            </ul>
+          </section>
+          <section class="gift">
+            <h2 class="visually-hidden">Подарок</h2>
+            <p class="gift__text">Закажите все и получите чехол для кота в подарок!</p>
+          </section>
+        </div>
         <section class="contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
-          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__container">
+            <span class="contacts__text">Приглашаем к сотрудничеству дилеров!</span>
+            <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+          </p>
           <img class="contacts__map" src="img/map.png" width="320" height="362" alt="Наш адрес: улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
         </section>
       </main>

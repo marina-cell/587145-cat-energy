@@ -1,0 +1,23 @@
+.program-item {
+  padding: 20px;
+  color: $main-text-color;
+  background-color: $main-bg-color;
+}
+
+.program-item__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.program-item__desc {
+  @include accessory-text;
+}
+
+.program-item__link {
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}

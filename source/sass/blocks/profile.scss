@@ -1,0 +1,17 @@
+.profile__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.profile__button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.profile__legend {
+  font-size: 14px;
+  line-height: 16px;
+
+  @include accessory-text;
+}
