@@ -6,11 +6,11 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body class="page">
-    <div class="page__container">
+  <body>
+    <div class="container">
       <header class="page-header">
         <div class="page-header__logo">
-          <img class="page-header__logo-icon" src="img/logo.svg" width="202" height="59" alt="Логотип магазина Cat Energy">
+          <img class="page-header__logo-icon" src="img/logo-mobile.svg" width="202" height="59" alt="Логотип магазина Cat Energy">
         </div>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть или закрыть меню</span></button>
@@ -24,13 +24,15 @@
       <main class="page-main">
         <h1 class="visually-hidden">Магазин здорового питания для котов Cat Energy</h1>
         <section class="header">
-          <h2 class="header__title">Функциональное питание для котов</h2>
-          <p class="header__slogan">Занялся собой? Займись котом!</p>
-          <img class="header__image" src="img/can.png" width="280" height="271" alt="Вкусняшка">
+          <div class="header__background">
+            <h2 class="header__title">Функциональное питание для котов</h2>
+            <p class="header__slogan">Занялся собой? Займись котом!</p>
+          </div>
+          <img class="header__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Вкусняшка">
+          <button class="button header__button" type="button">Подобрать программу</button>
         </section>
         <section class="program-choice">
           <h2 class="visually-hidden">Подобрать программу</h2>
-          <button class="button program-choice__button" type="button">Подобрать программу</button>
           <ul class="program-choice__list">
             <li class="program-choice__item program-item">
               <h3 class="program-item__title program-item__title--slim">Похудение</h3>
@@ -56,18 +58,20 @@
         <section class="example">
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <table class="example__facts">
-            <tr>
-              <td class="example__fact-value">5 кг</td>
-              <td class="example__fact-value">60 дней</td>
-            </tr>
-            <tr>
-              <td class="example__fact-title">снижение веса</td>
-              <td class="example__fact-title">затрачено времени</td>
-          </table>
-          <div class="example__cost">Затраты на питание: 15 000 руб.</div>
+          <div class="example__facts">
+            <table class="example__facts-table">
+              <tr>
+                <td class="example__fact-value">5 кг</td>
+                <td class="example__fact-value">60 дней</td>
+              </tr>
+              <tr>
+                <td class="example__fact-title">снижение веса</td>
+                <td class="example__fact-title">затрачено времени</td>
+            </table>
+            <div class="example__cost">Затраты на питание: 15 000 руб.</div>
+          </div>
           <div class="example__image was-became-example">
-            <img class="was-became-example__image" src="img/was.jpg" width="320" height="240" alt="Фото кота до программы похудения с Cat Energy">
+            <img class="was-became-example__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото кота до программы похудения с Cat Energy">
             <div class="was-became-example__toggle">
               <button class="was-became-example__was-state" type="button">Было</button>
               <button class="was-became-example__became-state" type="button">Стало</button>
@@ -80,18 +84,18 @@
             <span class="contacts__text">Приглашаем к сотрудничеству дилеров!</span>
             <span class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
           </p>
-          <img class="contacts__map" src="img/map.png" width="320" height="362" alt="Наш адрес: улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
+          <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Наш адрес: улица Большая Конюшенная, дом 19/8, Санкт-Петербург">
         </section>
       </main>
       <footer class="page-footer">
-        <div class="page-footer__logo logo-footer">
-          <img src="img/footer-logo.svg" width="128" height="24" alt="Логотип магазина Cat Energy">
+        <div class="page-footer__logo">
+          <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип магазина Cat Energy">
         </div>
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li><a class="social__link" href="#"><span class="visually-hidden">ВКонтакте</span></a></li>
-            <li><a class="social__link" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-            <li><a class="social__link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social__link" href="#">ВКонтакте<span class="visually-hidden">ВКонтакте</span></a></li>
+            <li><a class="social__link" href="#">Инстаграм<span class="visually-hidden">Инстаграм</span></a></li>
+            <li><a class="social__link" href="#">Фейсбук<span class="visually-hidden">Фейсбук</span></a></li>
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
