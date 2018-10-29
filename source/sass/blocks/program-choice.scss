@@ -2,6 +2,17 @@
   padding: 0 20px;
 }
 
-.program-choice__button {
-  padding: 10px 72px;
+.program-choice__list {
+  @include reset-list;
+}
+
+@media (min-width: $desktop-width) {
+  .program-choice__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .program-choice__item {
+    width: 570px;
+  }
 }

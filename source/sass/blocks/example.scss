@@ -30,3 +30,41 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .example__facts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__cost {
+    width: 180px;
+    text-align: right;
+  }
+
+  .example__image {
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__facts {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 450px;
+  }
+
+  .example__text {
+    width: 450px;
+  }
+
+  .example__cost {
+    width: auto;
+    text-align: left;
+  }
+
+  .example__image {
+    margin-top: -250px;
+    text-align: auto;
+  }
+}

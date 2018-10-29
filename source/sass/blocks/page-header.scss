@@ -1,0 +1,15 @@
+.page-header__logo {
+  padding: 11px 20px 16px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-header__logo {
+    padding: 24px 30px 55px 30px;
+  }
+}
