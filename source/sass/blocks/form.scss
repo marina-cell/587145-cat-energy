@@ -1,3 +1,19 @@
+.form {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__list {
+  @include reset-list;
+}
+
+.form__item {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+}
+
 .form__label {
   color: #222222;
   font-size: 16px;
@@ -17,4 +33,22 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  border: 1px solid #e6e6e6;
+}
+
+@media (min-width: $tablet-width) {
+  .form__list--checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item--checkbox {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__container {
+    display: flex;
+  }
 }

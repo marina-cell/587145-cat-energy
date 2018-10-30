@@ -1,3 +1,7 @@
+.show-more {
+  background-color: #ffffff;
+}
+
 .show-more__title {
   font-size: 16px;
   line-height: 20px;
@@ -13,8 +17,18 @@
 }
 
 .show-more__button {
+  display: inline-block;
+  width: 100%;
   color: #444444;
   font-size: 16px;
   line-height: 20px;
   background-color: #f2f2f2;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .show-more {
+    border: 1px solid #cdcdcd;
+  }
 }

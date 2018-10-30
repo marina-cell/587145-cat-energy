@@ -1,13 +1,30 @@
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .product-card__title {
+  width: 85px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.product-card__info {
+.product-card__table {
   font-size: 12px;
   line-height: 16px;
 
   @include accessory-text;
+}
+
+.product-card__button {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    flex-direction: column;
+  }
 }
