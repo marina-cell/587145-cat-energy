@@ -12,6 +12,14 @@
 .profile__legend {
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
 
   @include accessory-text;
+}
+
+@media (min-width: $tablet-width) {
+  .profile__legend {
+    display: inline-block;
+    vertical-align: baseline;
+  }
 }
