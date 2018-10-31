@@ -7,11 +7,48 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 280px auto;
   text-align: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .gift__text {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .gift {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 708px auto;
+    text-align: left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gift {
+    padding-top: 177px;
+    padding-bottom: 40px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 245px auto;
+    text-align: left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
 }

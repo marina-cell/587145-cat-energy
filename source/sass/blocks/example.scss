@@ -31,6 +31,11 @@
   text-transform: uppercase;
 }
 
+.example__image-wrapper {
+  width: 320px;
+  height: auto;
+}
+
 @media (min-width: $tablet-width) {
   .example__facts {
     display: flex;
@@ -44,6 +49,10 @@
 
   .example__image {
     text-align: center;
+  }
+
+  .example__image-wrapper {
+    width: 677px;
   }
 }
 
@@ -66,5 +75,9 @@
   .example__image {
     margin-top: -250px;
     text-align: auto;
+  }
+
+  .example__image-wrapper {
+    width: 677px;
   }
 }
