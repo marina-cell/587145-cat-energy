@@ -19,6 +19,10 @@
   margin-top: -140px;
 }
 
+.header__image-wrapper {
+  width: 280px;
+}
+
 .header__button {
   font-size: 20px;
   line-height: 20px;
@@ -35,14 +39,39 @@
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    background-size: 320px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .header {
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: 720px;
+      height: 696px;
+      background-color: $theme-bg-color;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 720px auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
   }
 
   .header__background {
@@ -61,6 +90,10 @@
     margin-top: 0;
     margin-left: -150px;
     z-index: 1;
+  }
+
+  .header__image-wrapper {
+    width: 709px;
   }
 
   .header__button {
@@ -83,6 +116,10 @@
   .header__image {
     margin-top: -200px;
     margin-left: 350px;
+  }
+
+  .header__image-wrapper {
+    width: 552px;
   }
 
   .header__button {
