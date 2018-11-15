@@ -1,39 +1,119 @@
 .example {
   padding: 20px;
+  padding-bottom: 35px;
   background-color: $main-bg-color;
 }
 
 .example__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
 }
 
 .example__text {
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  padding-right: 10px;
+
   @include accessory-text;
+}
+
+.example__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.example__item {
+  box-sizing: border-box;
+  width: 123px;
+  padding: 15px 0 10px 0;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
 }
 
 .example__fact-value {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .example__fact-title {
+  width: 65px;
+  margin: 0 auto;
+  padding: 5px 11px 0 11px;
   font-size: 12px;
   line-height: 12px;
+  margin-bottom: -25px;
+  background-color: $main-bg-color;
 
   @include accessory-text;
 }
 
 .example__cost {
+  margin-bottom: 35px;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .example__image-wrapper {
   width: 320px;
-  height: auto;
+  margin-right: -20px;  // Компенсация padding'ов у контейнера (.example)
+  margin-left: -20px;
+  margin-bottom: 29px;
+}
+
+.example__toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 198px;
+  margin: 0 auto;
+  padding-left: 5px;
+}
+
+.example__state-btn {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $main-text-color;
+  background-color: transparent;
+}
+
+.example__progress {
+  position: relative;
+  display: inline-block;
+  width: 84px;
+  height: 12px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50px;
+  background-color: #ffffff;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 5px;
+    top: 50%;
+    right: 5px;
+    width: 35px;
+    height: 6px;
+    background-color: $theme-bg-color;
+    transform: translateY(-50%);
+    transition: 0.3s;
+    border-radius: 50px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -75,9 +155,5 @@
   .example__image {
     margin-top: -250px;
     text-align: auto;
-  }
-
-  .example__image-wrapper {
-    width: 677px;
   }
 }
