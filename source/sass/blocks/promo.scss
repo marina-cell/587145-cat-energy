@@ -5,6 +5,7 @@
   padding-top: 27px;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -30,7 +31,7 @@
   display: block;
   width: 280px;
   margin: 0 auto;
-  padding: 10px 50px 12px 50px;;
+  padding: 10px 50px 12px 50px;
   font-size: 14px;
   line-height: 18px;
 }
@@ -57,11 +58,53 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .promo__background {
+    width: 430px;
+    padding-left: 117px;
+  }
+
+  .promo__title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .promo__slogan {
+    margin-bottom: 49px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .promo__image-wrapper {
+    order: 2;
+    width: 709px;
+    margin-top: 58px;
+    z-index: 1;
+  }
+
+  .promo__button {
+    width: auto;
+    margin-bottom: auto;
+    margin-left: 119px;
+    padding: 16px 29px 16px 25px;
+    z-index: 2;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    flex-direction: column;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -120px;
       right: 0;
       z-index: -1;
       width: 720px;
@@ -79,47 +122,21 @@
   }
 
   .promo__background {
-    width: 430px;
-    padding-left: 117px;
+    width: 530px;
+    padding-left: 190px;
   }
 
   .promo__title {
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
+    padding-top: 77px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 55px;
   }
 
   .promo__image {
-    order: 2;
-    margin-top: 0;
-    margin-left: -150px;
-    z-index: 1;
-  }
-
-  .promo__image-wrapper {
-    width: 709px;
-  }
-
-  .promo__button {
-    width: 245px;
-    margin-bottom: auto;
-    margin-left: 117px;
-    z-index: 2;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo {
-    flex-direction: column;
-  }
-
-  .promo__background {
-    width: 530px;
-  }
-
-  .promo__image {
-    margin-top: -200px;
-    margin-left: 350px;
+    margin-top: -425px;
+    margin-left: 115px;
   }
 
   .promo__image-wrapper {
@@ -127,6 +144,8 @@
   }
 
   .promo__button {
+    width: 245px;
     margin-right: auto;
+    margin-left: 190px;
   }
 }

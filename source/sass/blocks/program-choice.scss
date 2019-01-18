@@ -14,13 +14,29 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .program-choice {
+    padding: 0 30px;
+    margin-bottom: 45px;
+  }
+
+  .program-choice__item {
+    margin-bottom: 30px;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .program-choice {
+    padding: 0 110px;
+    margin-bottom: 74px;
+  }
+
   .program-choice__list {
     display: flex;
     flex-wrap: wrap;
   }
 
   .program-choice__item {
-    width: 570px;
+    margin-bottom: 0;
   }
 }

@@ -17,7 +17,7 @@
   color: #111111;
   font-size: 20px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
 }
@@ -28,8 +28,27 @@
     border: none;
   }
 
+  .main-nav__item {
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   .main-nav__link {
     width: auto;
     border: none;
+
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__link {
+    font-size: 20px;
+    color: #ffffff;
   }
 }

@@ -9,9 +9,33 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    padding: 0 30px;
+    padding-top: 19px;
   }
 
   .page-header__logo {
-    padding: 24px 30px 55px 30px;
+    width: 173px;
+    height: 58px;
+    padding: 0;
+    margin-right: 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0 110px;
+    padding-top: 50px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+    height: 59px;
+    margin-right: 538px;
+  }
+
+  .page-header__logo img {
+    width: 202px;
+    height: 59px;
   }
 }

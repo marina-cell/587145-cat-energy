@@ -100,7 +100,7 @@ gulp.task("refresh", function (done) {
 gulp.task("build", gulp.series(
   "clean",
   "copy",
-  // "webp",
+  "webp",
   "css",
   // "js",
   "sprite",
